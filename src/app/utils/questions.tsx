@@ -10,7 +10,7 @@ export const questions = [
     level: 1,
     question: "Warna dasar pada lambang Kota Bandung adalah…",
     options: ["Merah", "Biru", "Hijau", "Kuning"],
-    answer: "Hijau",
+    answer: "Kuning",
   },
   {
     level: 1,
