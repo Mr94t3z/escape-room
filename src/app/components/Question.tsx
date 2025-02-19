@@ -6,7 +6,7 @@ interface QuestionProps {
 
 const Question = ({ question, options, onAnswer }: QuestionProps) => {
   return (
-    <div className="bg-gray-800 p-6 sm:p-8 rounded-lg mb-4 max-w-md w-full mx-auto">
+    <div className="bg-gray-800/80 p-6 sm:p-8 rounded-lg mb-4 max-w-md w-full mx-auto">
       <h2 className="inline-block text-lg sm:text-xl md:text-2xl font-semibold mb-4 text-white text-center">
         {question}
       </h2>

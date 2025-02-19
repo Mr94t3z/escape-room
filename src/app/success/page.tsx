@@ -12,7 +12,7 @@ export default function Success() {
       }}
     >
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-pixel text-white text-center">Selamat! 🎉</h1>
-      <p className="inline-block text-base sm:text-lg md:text-xl mt-4 text-white text-center">Kamu berhasil menyelesaikan semua level.</p>
+      <p className="inline-block text-base sm:text-lg md:text-xl mt-4 text-white text-center">Kamu berhasil melarikan diri dari semua level.</p>
       <button
         className="mt-6 px-6 py-3 bg-green-500 hover:bg-green-600 rounded text-lg"
         onClick={() => router.push("/")}
