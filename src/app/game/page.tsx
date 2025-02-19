@@ -36,7 +36,7 @@ export default function Game() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen"
+    <div className="flex flex-col items-center justify-center bg-cover bg-center h-screen"
     style={{ backgroundImage: "url('/bg.gif')" }}
     >
       <h2 className="text-5xl mb-4">Level {level}</h2>
