@@ -2,18 +2,6 @@ export const questions = [
   // Level 1 – BERKEMBANG
   {
     level: 1,
-    question:
-      "Lihat gambar dua anak berebut giliran bermain ayunan. Apa yang sebaiknya mereka lakukan?",
-    image: "/images/bermain-ayunan.png",
-    options: [
-      "Bermusyawarah dan bergiliran",
-      "Meminta bantuan orang dewasa",
-      "Siapa cepat dia dapat",
-    ],
-    answer: "Bermusyawarah dan bergiliran",
-  },
-  {
-    level: 1,
     question: "Apa arti simbol ini dalam Pancasila? (simbol bintang emas)",
     options: [
       "Cita-cita rakyat Indonesia",
