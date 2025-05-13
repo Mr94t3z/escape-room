@@ -36,17 +36,26 @@ export default function Game() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center bg-cover bg-center h-screen"
-    style={{ backgroundImage: "url('/play.gif')" }}
-    >
-      <h2 className="text-5xl mb-4">Level {level}</h2>
-      <p className="mb-4">Nyawa: {lives} ❤️</p>
-      <Timer time={120} onTimeout={() => router.push("/game-over?reason=time")} />
-      <Question
-        question={levelQuestions[questionIndex]?.question}
-        options={levelQuestions[questionIndex]?.options}
-        onAnswer={handleAnswer}
-      />
+    <div className="flex flex-col min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('/play.gif')" }}>
+      {/* Main content */}
+      <main className="flex flex-col items-center justify-center flex-grow px-4 py-6">
+        <h2 className="text-5xl mb-4">Level {level}</h2>
+        <p className="mb-4">Nyawa: {lives} ❤️</p>
+        <Timer time={120} onTimeout={() => router.push("/game-over?reason=time")} />
+        <Question
+          question={levelQuestions[questionIndex]?.question}
+          image={levelQuestions[questionIndex]?.image}
+          options={levelQuestions[questionIndex]?.options}
+          onAnswer={handleAnswer}
+        />
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white text-center py-4 w-full">
+        <p className="text-sm">
+          &copy; PPG 2025 - Escape Room by Rifqotul Aulia.
+        </p>
+      </footer>
     </div>
   );
 }

@@ -1,137 +1,206 @@
 export const questions = [
-  // Level 1
+  // Level 1 – BERKEMBANG
   {
     level: 1,
-    question: "Apa yang menjadi simbol utama pada lambang Provinsi Jawa Barat?",
-    options: ["Kujang", "Keris", "Rumah adat", "Gunung"],
-    answer: "Kujang",
-  },
-  {
-    level: 1,
-    question: "Warna dasar pada lambang Kota Bandung adalah…",
-    options: ["Merah", "Biru", "Hijau", "Kuning"],
-    answer: "Kuning",
-  },
-  {
-    level: 1,
-    question: "Apa yang melambangkan kesuburan dalam lambang Jawa Barat?",
-    options: ["Gunung", "Padi dan kapas", "Kujang", "Matahari"],
-    answer: "Padi dan kapas",
-  },
-  {
-    level: 1,
-    question: "Kota Bandung adalah ibu kota dari…",
+    question:
+      "Lihat gambar dua anak berebut giliran bermain ayunan. Apa yang sebaiknya mereka lakukan?",
+    image: "/images/bermain-ayunan.png",
     options: [
-      "Provinsi DKI Jakarta",
-      "Provinsi Banten",
-      "Provinsi Jawa Barat",
-      "Provinsi Jawa Tengah",
+      "Bermusyawarah dan bergiliran",
+      "Meminta bantuan orang dewasa",
+      "Siapa cepat dia dapat",
     ],
-    answer: "Provinsi Jawa Barat",
+    answer: "Bermusyawarah dan bergiliran",
   },
   {
     level: 1,
-    question: "Apa nama senjata tradisional Sunda yang ada dalam lambang Jawa Barat?",
-    options: ["Keris", "Mandau", "Kujang", "Tombak"],
-    answer: "Kujang",
+    question: "Apa arti simbol ini dalam Pancasila? (simbol bintang emas)",
+    options: [
+      "Cita-cita rakyat Indonesia",
+      "Cahaya keadilan sosial",
+      "Ketuhanan Yang Maha Esa",
+    ],
+    answer: "Ketuhanan Yang Maha Esa",
+  },
+  {
+    level: 1,
+    question: "Santi melihat temannya kesusahan membawa buku. Apa yang sebaiknya dilakukan Santi?",
+    options: [
+      "Mengingatkan guru agar membantu",
+      "Menertawakan karena lucu",
+      "Membantu membawa buku itu",
+    ],
+    answer: "Membantu membawa buku itu",
+  },
+  {
+    level: 1,
+    question: "Pilih gambar yang paling sesuai dengan sila kedua Pancasila!",
+    options: [
+      { label: "Rantai Emas", imageUrl: "/images/rantai-emas.png" },
+      { label: "Padi & Kapas", imageUrl: "/images/padi-kapas.png" },
+      { label: "Pohon Beringin", imageUrl: "/images/pohon-beringin.png" }
+    ],
+    answer: "Rantai Emas"
+  },
+  {
+    level: 1,
+    question: "Apa bunyi sila ketiga Pancasila?",
+    options: [
+      "Persatuan keluarga Indonesia",
+      "Persatuan Indonesia",
+      "Keadilan sosial bagi semua orang",
+    ],
+    answer: "Persatuan Indonesia",
+  },
+  {
+    level: 1,
+    question: "Dika bermain dengan semua teman tanpa memilih. Sila manakah yang ia tunjukkan?",
+    options: ["Kedua", "Pertama", "Keempat"],
+    answer: "Kedua",
+  },
+  {
+    level: 1,
+    question: "Kepala banteng adalah simbol dari sila ke...?",
+    options: ["Keempat", "Ketiga", "Kelima"],
+    answer: "Keempat",
+  },
+  {
+    level: 1,
+    question: "Apa maksud dari sikap adil dalam sila kedua?",
+    options: [
+      "Membela yang paling kuat",
+      "Memberi yang lebih banyak pada teman dekat",
+      "Membagi hak secara merata",
+    ],
+    answer: "Membagi hak secara merata",
+  },
+  {
+    level: 1,
+    question: "Apa yang harus kita lakukan saat teman berbeda agama?",
+    options: [
+      "Menghormatinya",
+      "Mengajaknya pindah agama",
+      "Tidak berteman dengannya",
+    ],
+    answer: "Menghormatinya",
+  },
+  {
+    level: 1,
+    question: "Simbol padi dan kapas melambangkan...?",
+    options: [
+      "Persatuan Indonesia",
+      "Kemakmuran dan keadilan sosial",
+      "Perjuangan petani dan nelayan",
+    ],
+    answer: "Kemakmuran dan keadilan sosial",
+  },
+  {
+    level: 1,
+    question: "Bagaimana kita menyampaikan pendapat saat diskusi?",
+    options: [
+      "Dengan suara keras biar didengar",
+      "Dengan sopan dan santun",
+      "Dengan marah karena penting",
+    ],
+    answer: "Dengan sopan dan santun",
   },
 
-  // Level 2
+  // Level 2 – MAHIR
   {
     level: 2,
-    question: "Apa arti dari 17 butir padi dalam lambang Jawa Barat?",
+    question:
+      "Rina tidak setuju dengan hasil musyawarah di kelas, tapi dia tetap menerima dengan senang hati. Apa nilai yang ditunjukkan Rina?",
     options: [
-      "Tanggal kemerdekaan Indonesia",
-      "Jumlah kabupaten di Jawa Barat",
-      "Jumlah kecamatan di Bandung",
-      "Umur Provinsi Jawa Barat",
+      "Suka dipuji karena patuh",
+      "Menghargai pendapat pribadi",
+      "Menerima hasil musyawarah dengan lapang dada",
     ],
-    answer: "Tanggal kemerdekaan Indonesia",
-  },
-  {
-    level: 2,
-    question: "Apa arti dari warna hijau pada lambang Kota Bandung?",
-    options: ["Keberanian", "Kemakmuran dan kesuburan", "Kekuasaan", "Keindahan"],
-    answer: "Kemakmuran dan kesuburan",
+    answer: "Menerima hasil musyawarah dengan lapang dada",
   },
   {
     level: 2,
-    question: "Apa warna lain yang digunakan pada lambang Kota Bandung selain hijau?",
-    options: ["Merah dan putih", "Kuning dan biru", "Hitam dan abu-abu", "Ungu dan oranye"],
-    answer: "Kuning dan biru",
+    question:
+      "Bayu tetap memakai produk lokal meskipun temannya membeli produk luar negeri yang lebih mahal. Apa nilai Pancasila yang Bayu tunjukkan?",
+    options: [
+      "Cinta produk luar negeri",
+      "Bangga sebagai bangsa Indonesia",
+      "Hemat uang jajan",
+    ],
+    answer: "Bangga sebagai bangsa Indonesia",
   },
   {
     level: 2,
-    question: "Gunung dalam lambang Kota Bandung melambangkan…",
-    options: ["Keindahan alam", "Keberanian", "Perekonomian", "Teknologi"],
-    answer: "Keindahan alam",
+    question: "Rantai emas dalam perisai Garuda menggambarkan...",
+    options: [
+      "Kekuasaan pemerintah",
+      "Hubungan antar manusia yang saling membantu",
+      "Persatuan antar sekolah",
+    ],
+    answer: "Hubungan antar manusia yang saling membantu",
   },
   {
     level: 2,
-    question: "Jembatan dalam lambang Kota Bandung melambangkan…",
+    question:
+      "Dino tidak mau ikut kerja bakti karena merasa itu bukan tugasnya. Apa pendapatmu?",
     options: [
-      "Persatuan dan konektivitas",
-      "Tempat wisata",
-      "Sejarah kerajaan",
-      "Hanya sebagai hiasan",
+      "Dino benar, dia sibuk belajar",
+      "Dino melanggar nilai gotong royong",
+      "Dino sedang menghemat tenaga",
     ],
-    answer: "Persatuan dan konektivitas",
-  },
-
-  // Level 3
-  {
-    level: 3,
-    question: "Mengapa kujang digunakan dalam lambang Provinsi Jawa Barat?",
-    options: [
-      "Karena kujang adalah senjata khas Sunda",
-      "Karena kujang adalah senjata nasional",
-      "Karena kujang berasal dari luar negeri",
-      "Karena kujang hanya digunakan dalam upacara",
-    ],
-    answer: "Karena kujang adalah senjata khas Sunda",
+    answer: "Dino melanggar nilai gotong royong",
   },
   {
-    level: 3,
-    question: "Apa perbedaan utama antara lambang Provinsi Jawa Barat dan lambang Kota Bandung?",
-    options: [
-      "Lambang Jawa Barat memiliki kujang, sedangkan Kota Bandung tidak",
-      "Lambang Kota Bandung lebih berwarna daripada lambang Jawa Barat",
-      "Lambang Kota Bandung memiliki bintang, sedangkan Jawa Barat tidak",
-      "Lambang Jawa Barat berbentuk lingkaran, sedangkan Kota Bandung berbentuk segitiga",
-    ],
-    answer: "Lambang Jawa Barat memiliki kujang, sedangkan Kota Bandung tidak",
+    level: 2,
+    question:
+      "Alya mengusulkan ide saat diskusi, mendengarkan teman, dan tidak memaksakan kehendak. Sila apakah itu?",
+    options: ["Sila ke-1", "Sila ke-4", "Sila ke-2"],
+    answer: "Sila ke-4",
   },
   {
-    level: 3,
-    question: "Mengapa penting bagi kita untuk mengenal lambang daerah sendiri?",
+    level: 2,
+    question: "Mengapa kepala banteng dipilih sebagai simbol sila keempat?",
     options: [
-      "Agar kita tahu tentang sejarah dan budaya daerah kita",
-      "Agar kita bisa menggambar lambang daerah",
-      "Agar bisa membandingkan dengan lambang negara lain",
-      "Agar bisa menjadikannya logo pribadi",
+      "Karena banteng suka bertarung",
+      "Karena banteng suka berkumpul dan berdiskusi",
+      "Karena banteng hewan yang kuat",
     ],
-    answer: "Agar kita tahu tentang sejarah dan budaya daerah kita",
+    answer: "Karena banteng suka berkumpul dan berdiskusi",
   },
   {
-    level: 3,
-    question: "Mengapa warna pada lambang daerah memiliki makna khusus?",
-    options: [
-      "Karena setiap warna melambangkan sesuatu yang penting dalam budaya daerah",
-      "Karena warna hanya dipilih secara acak",
-      "Karena warna harus selalu sama di semua lambang daerah",
-      "Karena warna tidak memiliki arti khusus",
-    ],
-    answer: "Karena setiap warna melambangkan sesuatu yang penting dalam budaya daerah",
+    level: 2,
+    question:
+      "Winda belajar dengan rajin setiap hari dan menghargai hasil ujian teman. Sikap ini mencerminkan sila...",
+    options: ["Kelima", "Kedua", "Ketiga"],
+    answer: "Kelima",
   },
   {
-    level: 3,
-    question: "Apa tujuan utama dari adanya lambang daerah?",
+    level: 2,
+    question:
+      "Farah tidak mengejek hasil karya temannya yang belum rapi. Ia justru memberi semangat. Apa nilai yang ditunjukkan?",
+    options: ["Suka dipuji guru", "Menghargai hasil karya orang lain", "Takut dimarahi"],
+    answer: "Menghargai hasil karya orang lain",
+  },
+  {
+    level: 2,
+    question:
+      "Lihat gambar dua anak berebut giliran bermain ayunan. Apa yang sebaiknya mereka lakukan?",
+    image: "/images/bermain-ayunan.png",
     options: [
-      "Untuk menunjukkan identitas dan ciri khas suatu daerah",
-      "Untuk hiasan di kantor pemerintahan",
-      "Untuk membuat daerah terlihat menarik",
-      "Untuk membedakan daerah dengan negara lain",
+      "Bermusyawarah dan bergiliran",
+      "Meminta bantuan orang dewasa",
+      "Siapa cepat dia dapat",
     ],
-    answer: "Untuk menunjukkan identitas dan ciri khas suatu daerah",
+    answer: "Bermusyawarah dan bergiliran",
+  },
+  {
+    level: 2,
+    question:
+      "Mengapa kita tidak boleh memaksakan pendapat saat diskusi kelas?",
+    options: [
+      "Supaya cepat selesai",
+      "Supaya hasilnya adil dan semua merasa dihargai",
+      "Karena itu membosankan",
+    ],
+    answer: "Supaya hasilnya adil dan semua merasa dihargai",
   },
 ];

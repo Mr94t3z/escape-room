@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  poweredByHeader: false, // This removes the "Powered by Next.js" footer
 };
 
 export default nextConfig;
