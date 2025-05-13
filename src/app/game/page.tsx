@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { questions } from "../utils/questions";
 import Question from "../components/Question";
@@ -10,6 +10,16 @@ export default function Game() {
   const [level, setLevel] = useState(1);
   const [lives, setLives] = useState(3);
   const [questionIndex, setQuestionIndex] = useState(0);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    // Auto-play music when entering the page
+    if (audioRef.current) {
+      audioRef.current.play().catch((err) => {
+        console.warn("Autoplay failed:", err);
+      });
+    }
+  }, []);
 
   // Filter pertanyaan berdasarkan level saat ini
   const levelQuestions = questions.filter((q) => q.level === level);
@@ -36,9 +46,14 @@ export default function Game() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('/play.gif')" }}>
+    <div className="flex flex-col min-h-screen bg-cover bg-center" 
+      style={{ backgroundImage: "url('/play.gif')" }}>
       {/* Main content */}
       <main className="flex flex-col items-center justify-center flex-grow px-4 py-6">
+
+        {/* Audio element */}
+        <audio ref={audioRef} src="/audio/bg-music.mp3" loop preload="auto" />
+
         <h2 className="text-5xl mb-4">Level {level}</h2>
         <p className="mb-4">Nyawa: {lives} ❤️</p>
         <Timer time={120} onTimeout={() => router.push("/game-over?reason=time")} />
@@ -57,5 +72,6 @@ export default function Game() {
         </p>
       </footer>
     </div>
+
   );
 }
