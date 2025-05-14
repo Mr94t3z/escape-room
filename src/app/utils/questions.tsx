@@ -2,7 +2,8 @@ export const questions = [
   // Level 1 – BERKEMBANG
   {
     level: 1,
-    question: "Apa arti simbol ini dalam Pancasila? (simbol bintang emas)",
+    question: "Apa arti simbol ini dalam Pancasila?",
+    image: "/images/bintang-emas.png",
     options: [
       "Cita-cita rakyat Indonesia",
       "Cahaya keadilan sosial",

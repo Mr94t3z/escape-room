@@ -8,7 +8,7 @@ export default function Success() {
     <div 
       className="flex flex-col items-center justify-center min-h-screen bg-green-700 bg-cover bg-center px-10"
       style={{
-        backgroundImage: "url('/won.gif')", // Ganti dengan URL gambar GIF yang diinginkan
+        backgroundImage: "url('/won.gif')",
       }}
     >
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-pixel text-white text-center">Selamat! 🎉</h1>

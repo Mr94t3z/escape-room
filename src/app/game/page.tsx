@@ -56,7 +56,7 @@ export default function Game() {
 
         <h2 className="text-5xl mb-4">Level {level}</h2>
         <p className="mb-4">Nyawa: {lives} ❤️</p>
-        <Timer time={120} onTimeout={() => router.push("/game-over?reason=time")} />
+        <Timer time={300} onTimeout={() => router.push("/game-over?reason=time")} />
         <Question
           question={levelQuestions[questionIndex]?.question}
           image={levelQuestions[questionIndex]?.image}
