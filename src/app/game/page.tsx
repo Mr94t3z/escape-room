@@ -47,7 +47,7 @@ export default function Game() {
 
   return (
     <div className="flex flex-col min-h-screen bg-cover bg-center" 
-      style={{ backgroundImage: "url('/play.gif')" }}>
+      style={{ backgroundImage: "url('/indonesian.gif')" }}>
       {/* Main content */}
       <main className="flex flex-col items-center justify-center flex-grow px-4 py-6">
 
