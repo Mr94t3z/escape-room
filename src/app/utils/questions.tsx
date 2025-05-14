@@ -78,10 +78,10 @@ export const questions = [
     question: "Simbol padi dan kapas melambangkan...?",
     options: [
       "Persatuan Indonesia",
-      "Kemakmuran dan keadilan sosial",
+      "Keadilan Sosial Bagi Seluruh Rakyat Indonesia",
       "Perjuangan petani dan nelayan",
     ],
-    answer: "Kemakmuran dan keadilan sosial",
+    answer: "Keadilan Sosial Bagi Seluruh Rakyat Indonesia",
   },
   {
     level: 1,

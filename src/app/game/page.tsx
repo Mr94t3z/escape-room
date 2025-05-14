@@ -65,9 +65,9 @@ export default function Game() {
           <img src="/images/door.gif" alt="Pintu" className="w-64 mb-4 animate-pulse" />
           <button
             onClick={handleNextLevel}
-            className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg text-xl font-semibold"
+            className="bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-lg text-xl font-semibold"
           >
-            Buka Pintu ke Level {level + 1}
+            Buka Pintu
           </button>
         </main>
       ) : (
