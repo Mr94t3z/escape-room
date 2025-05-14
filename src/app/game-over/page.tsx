@@ -10,12 +10,14 @@ function GameOverContent() {
 
   // Play audio on component mount
   useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.play().catch((err) => {
+    const timeout = setTimeout(() => {
+      audioRef.current?.play().catch((err) => {
         console.warn("Autoplay failed:", err);
       });
-    }
-  }, []);
+    }, 10); // give the browser a tiny delay to catch up
+  
+    return () => clearTimeout(timeout);
+  }, []);  
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-red-600 text-white">
