@@ -12,6 +12,7 @@ export default function Game() {
   const [lives, setLives] = useState(3);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [showDoorTransition, setShowDoorTransition] = useState(false);
+  const [timeLeft, setTimeLeft] = useState<number>(1);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
@@ -30,11 +31,14 @@ export default function Game() {
     if (answer === currentQuestion.answer) {
       if (questionIndex < levelQuestions.length - 1) {
         setQuestionIndex((prev) => prev + 1);
-      } else if (level < 3) {
-        // Tampilkan transisi pintu
-        setShowDoorTransition(true);
-      } else {
+      } else if (level === 2) {
+        // Final success
+        sessionStorage.setItem("playSuccessAudio", "true");
+        sessionStorage.setItem("timeLeft", timeLeft.toString());
         router.push("/success");
+      } else {
+        // Move to next level (level 1 done)
+        setShowDoorTransition(true);
       }
     } else {
       setLives((prev) => {
@@ -48,9 +52,15 @@ export default function Game() {
   };
 
   const handleNextLevel = () => {
-    setLevel((prev) => prev + 1);
-    setQuestionIndex(0);
-    setShowDoorTransition(false);
+    if (level === 1) {
+      setLevel(2);
+      setQuestionIndex(0);
+      setShowDoorTransition(false);
+    } else {
+      sessionStorage.setItem("playSuccessAudio", "true");
+      sessionStorage.setItem("timeLeft", timeLeft.toString());
+      router.push("/success");
+    }
   };
 
   return (
@@ -74,7 +84,11 @@ export default function Game() {
         <main className="flex flex-col items-center justify-center flex-grow px-4 py-6">
           <h2 className="text-5xl mb-4">Level {level}</h2>
           <p className="mb-4">Nyawa: {lives} ❤️</p>
-          <Timer time={120} onTimeout={() => router.push("/game-over?reason=time")} />
+          <Timer
+            time={1}
+            onTimeout={() => router.push("/game-over?reason=time")}
+            onTick={setTimeLeft}
+          />
           <Question
             question={levelQuestions[questionIndex]?.question}
             image={levelQuestions[questionIndex]?.image}
