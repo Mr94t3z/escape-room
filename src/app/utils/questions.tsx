@@ -55,16 +55,6 @@ export const questions = [
   },
   {
     level: 1,
-    question: "Apa maksud dari sikap adil dalam sila kedua?",
-    options: [
-      "Membela yang paling kuat",
-      "Memberi yang lebih banyak pada teman dekat",
-      "Membagi hak secara merata",
-    ],
-    answer: "Membagi hak secara merata",
-  },
-  {
-    level: 1,
     question: "Apa yang harus kita lakukan saat teman berbeda agama?",
     options: [
       "Menghormatinya",
@@ -72,26 +62,6 @@ export const questions = [
       "Tidak berteman dengannya",
     ],
     answer: "Menghormatinya",
-  },
-  {
-    level: 1,
-    question: "Simbol padi dan kapas melambangkan...?",
-    options: [
-      "Persatuan Indonesia",
-      "Keadilan Sosial Bagi Seluruh Rakyat Indonesia",
-      "Perjuangan petani dan nelayan",
-    ],
-    answer: "Keadilan Sosial Bagi Seluruh Rakyat Indonesia",
-  },
-  {
-    level: 1,
-    question: "Bagaimana kita menyampaikan pendapat saat diskusi?",
-    options: [
-      "Dengan suara keras biar didengar",
-      "Dengan sopan dan santun",
-      "Dengan marah karena penting",
-    ],
-    answer: "Dengan sopan dan santun",
   },
 
   // Level 2 – MAHIR
@@ -105,27 +75,6 @@ export const questions = [
       "Menerima hasil musyawarah dengan lapang dada",
     ],
     answer: "Menerima hasil musyawarah dengan lapang dada",
-  },
-  {
-    level: 2,
-    question:
-      "Bayu tetap memakai produk lokal meskipun temannya membeli produk luar negeri yang lebih mahal. Apa nilai Pancasila yang Bayu tunjukkan?",
-    options: [
-      "Cinta produk luar negeri",
-      "Bangga sebagai bangsa Indonesia",
-      "Hemat uang jajan",
-    ],
-    answer: "Bangga sebagai bangsa Indonesia",
-  },
-  {
-    level: 2,
-    question: "Rantai emas dalam perisai Garuda menggambarkan...",
-    options: [
-      "Kekuasaan pemerintah",
-      "Hubungan antar manusia yang saling membantu",
-      "Persatuan antar sekolah",
-    ],
-    answer: "Hubungan antar manusia yang saling membantu",
   },
   {
     level: 2,
@@ -144,16 +93,6 @@ export const questions = [
       "Alya mengusulkan ide saat diskusi, mendengarkan teman, dan tidak memaksakan kehendak. Sila apakah itu?",
     options: ["Sila ke-1", "Sila ke-4", "Sila ke-2"],
     answer: "Sila ke-4",
-  },
-  {
-    level: 2,
-    question: "Mengapa kepala banteng dipilih sebagai simbol sila keempat?",
-    options: [
-      "Karena banteng suka bertarung",
-      "Karena banteng suka berkumpul dan berdiskusi",
-      "Karena banteng hewan yang kuat",
-    ],
-    answer: "Karena banteng suka berkumpul dan berdiskusi",
   },
   {
     level: 2,
