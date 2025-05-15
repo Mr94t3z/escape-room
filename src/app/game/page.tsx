@@ -12,7 +12,7 @@ export default function Game() {
   const [lives, setLives] = useState(3);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [showDoorTransition, setShowDoorTransition] = useState(false);
-  const [timeLeft, setTimeLeft] = useState<number>(10);
+  const [timeLeft, setTimeLeft] = useState<number>(300);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
@@ -85,7 +85,7 @@ export default function Game() {
           <h2 className="text-5xl mb-4">Level {level}</h2>
           <p className="mb-4">Nyawa: {lives} ❤️</p>
           <Timer
-            time={10}
+            time={300}
             onTimeout={() => router.push("/game-over?reason=time")}
             onTick={setTimeLeft}
           />
